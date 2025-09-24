@@ -1,0 +1,78 @@
+EXTENSAO VSCODE
+LINGUAGEM DE PROGRAMAÇÃO C/C++
+
+- C/C++ IntelliSense
+- C/C++ Compile Run
+- C/C++ Extension Pack
+
+COMPILADOR
+- mingw    (windows)
+- gcc    (linux)
+
+
+
+
+
+
+# TIPOS DE VARIAVEIS EM C/C++
+
+
+Identique os principais tipos de variáveis existentes na Linguagem de Programação C/C++
+variável, tipo, entrada, processamento e saida
+
+/* ARQUIVO: bonus.c */
+/* BIBLIOTECA */
+
+#include<stdio.h>
+/* CONTASTANTE */
+#define C_CHAR "Julia %@_-& 123"
+#define C_INT 182
+#define C_FLOAT 100.00
+#define C_DOUBLE 8723457.98
+
+int main()
+{
+    system("clear");
+    /* TIPOS DE VARIAVEIS */
+    char caracter;
+     /* %c 'a' */
+    char nome[20];
+     /* %s "Mauro" */
+    int ano;
+     /* %d 123 */
+    float salario;
+     /* %f 123.45 */
+    double faturamento, qtd; /* %lf 12345678.75 */
+    /* ENTRADA */
+    printf("\nCaracter.: ");
+    scanf("%c", &caracter);
+    printf("\nNome...: ");
+    scanf("%s", &nome);
+    printf("\nAno...........:scanf("%d", &ano);
+    ");
+    printf("\nSalario.......:scanf("%f", &salario);
+    ");
+    printf("\nFaturamento...: ");
+    scanf("%lf", &faturamento);
+    /* PROCESSAMENTO */
+    qtd = (C_DOUBLE - faturamento) * 150.0;
+    /* SAIDA */
+    printf("\n");
+    printf("\n=== SAÍDA ===");
+    printf("\nCaracter.....: %c", caracter);
+    printf("\nNome.........: %s", nome);
+    printf("\nAno..........: %d", ano);
+    printf("\nSalario......: %.2f", salario);
+    printf("\nFaturamento..: %.2lf", faturamento);
+    printf("\nMeu %.2lf de Faturamento, QTD %.2lf Salario de %.2f", faturamento, qtd, salario)
+
+    /* CONSTANTE */
+    printf("\n");
+    printf("\n=== CONSTANTES ===");
+    printf("\nCHAR....: %s", C_CHAR);
+    printf("\nINT.....: %d", C_INT);
+    printf("\nFLOAT...: %.2f", C_FLOAT);
+    printf("\nDOUBLE..: %.2f", C_DOUBLE);
+    return(0);
+
+}
